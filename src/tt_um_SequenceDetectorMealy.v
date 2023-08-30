@@ -28,11 +28,11 @@ module tt_um_SequenceDetectorMealy(
     
     always@(posedge clk) begin
         if (rst_n) begin count = 0; yout <= 1; end
-        if(ain) begin
+        else if(ain) begin
             count = count +1;
             if (count == 3)
                 count = 0;
-            if (!count) yout = 1;
+            else if (!count) yout = 1;
             else yout = 0;
         end
 
