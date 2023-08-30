@@ -27,7 +27,7 @@ module tt_um_SequenceDetectorMealy(
     assign ain = ui_in[0];
     
     always@(posedge clk) begin
-        if (rst_n) begin count = 0; yout <= 1; end
+        if (rst_n) begin count = 0; yout = 1; end
         else if(ain) begin
             count = count +1;
             if (count == 3)
