@@ -3,7 +3,7 @@
 
 
 
-module SequenceDetectorMealy(
+module tt_um_SequenceDetectorMealy(
     input clk,
     input reset, 
     input ain,
