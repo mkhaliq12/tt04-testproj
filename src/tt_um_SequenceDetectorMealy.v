@@ -17,6 +17,10 @@ module tt_um_SequenceDetectorMealy(
     reg yout;
     wire ain;
     reg [1:0] count;
+
+    assign uo_out[7:1] = 7'd0;
+    assign uio_out[7:0] = 8'd0;
+    assign uio_oe[7:0] = 8'd0;
     
     
     assign uo_out[0] = yout;
